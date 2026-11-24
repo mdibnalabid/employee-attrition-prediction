@@ -2,7 +2,6 @@
 
 > **A Comparative Study of Multiple Classification Algorithms with Explainable AI (SHAP) and Streamlit Deployment**
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Dataset](https://img.shields.io/badge/Dataset-IBM%20HR%20Analytics-orange?logo=kaggle)](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
@@ -24,8 +23,8 @@ handle class imbalance, tunes hyperparameters with cross-validation, and explain
 predictions using SHAP (SHapley Additive exPlanations) — making it a transparent,
 trustworthy tool for HR decision-makers.
 
-A fully interactive **Streamlit web application** is deployed at:
-**🔗 [https://your-app-name.streamlit.app](https://your-app-name.streamlit.app)**
+A fully interactive **Streamlit web application** (`app.py`) is included in this repository.
+It is not deployed publicly yet; run it locally by following the [Local Setup](#-local-setup) steps below.
 
 ---
 
@@ -170,7 +169,7 @@ employee-attrition-prediction/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/employee-attrition-prediction.git
+git clone https://github.com/md-ibna-labid/employee-attrition-prediction.git
 cd employee-attrition-prediction
 
 # 2. Create and activate a virtual environment
@@ -198,10 +197,15 @@ The app will open automatically at `http://localhost:8501`.
 
 ## ☁️ Streamlit Community Cloud Deployment
 
-See the [Deployment Guide](#deployment-guide) section at the bottom of this README,
-or follow the detailed step-by-step instructions in the project wiki.
+The app is not deployed yet, so there is no public demo link. To deploy it on
+[Streamlit Community Cloud](https://share.streamlit.io):
 
-**Live app:** 🔗 [https://your-app-name.streamlit.app](https://your-app-name.streamlit.app)
+1. Sign in to Streamlit Community Cloud with your GitHub account.
+2. Click **Create app** and select this repository, the `main` branch, and `app.py` as the main file.
+3. Click **Deploy**. Dependencies are installed from `requirements.txt`, and the app loads
+   `best_attrition_model.pkl` and `scaler.pkl` from the repository root.
+
+**Live app:** not deployed yet. See [Local Setup](#-local-setup) to run it on your machine.
 
 ---
 

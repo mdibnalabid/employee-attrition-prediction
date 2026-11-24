@@ -170,7 +170,7 @@ employee-attrition-prediction/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/md-ibna-labid/employee-attrition-prediction.git
+git clone https://github.com/mdibnalabid/employee-attrition-prediction.git
 cd employee-attrition-prediction
 
 # 2. Create and activate a virtual environment
